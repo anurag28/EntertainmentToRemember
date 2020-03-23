@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="backgroundHome2.jpg" />
+    <None Remove="Images\backgroundHome.jpg" />
+    <None Remove="Images\backgroundHome2.jpg" />
+    <None Remove="Images\backgroundHome3.jpg" />
+    <None Remove="Images\backgroundHome4.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\backgroundHome.jpg" />
+    <Resource Include="Images\backgroundHome2.jpg" />
+    <Resource Include="Images\backgroundHome3.jpg" />
+    <Resource Include="Images\backgroundHome4.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddMovies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddSearchMoviesOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddSearchShowsOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddSearchSongsOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddShows.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddSongs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchMovies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddMovies.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddSearchMoviesOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddSearchShowsOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddSearchSongsOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddShows.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddSongs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchMovies.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

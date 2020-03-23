@@ -1,0 +1,72 @@
+﻿<Page x:Class="EntertainmentToRemember.AddMovies"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EntertainmentToRemember"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+      Title="AddMovies">
+
+
+    <Grid HorizontalAlignment="Stretch">
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="Background" Value="Gray"/>
+                <Setter Property="Margin" Value="20"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="ExtraBold"/>
+                <Setter Property="Width" Value="100"></Setter>
+                <Setter Property="FontStyle" Value="Oblique"></Setter>
+                <Setter Property="FontFamily" Value="Bradley Hand ITC"></Setter>
+                <Setter Property="Foreground" Value="White"></Setter>
+            </Style>
+
+            <Style TargetType="TextBox">
+                <Setter Property="Background" Value="Cornsilk"/>
+                <Setter Property="Margin" Value="40"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Width" Value="150"></Setter>
+                <Setter Property="FontStyle" Value="Oblique"></Setter>
+                <Setter Property="FontFamily" Value="Bradley Hand ITC"></Setter>
+                <Setter Property="Foreground" Value="DarkBlue"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Images/backgroundHome4.jpg"
+                AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblName" Grid.Row="0" Grid.Column="0" Content="Name"/>
+        <TextBox x:Name="txtName" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"/>
+        <Label x:Name="lblCast" Grid.Row="1" Grid.Column="0" Content="Star Cast"/>
+        <TextBox x:Name="txtCast" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center"/>
+        <Label x:Name="lblGenre" Grid.Row="2" Grid.Column="0" Content="Genre"/>
+
+        <ComboBox Name="drpdownGenre" Grid.Column="1" Grid.Row="2" FontSize="15" HorizontalAlignment="Center" Height="25" Width="160" Background="BlanchedAlmond" FontFamily="Bradley Hand ITC" FontStyle="Oblique" FontWeight="ExtraBold" Cursor="Arrow">
+            <ComboBoxItem IsSelected="True" Content="Choose your option"></ComboBoxItem>
+            <ComboBoxItem Content="Action"></ComboBoxItem>
+            <ComboBoxItem Content="Comedy"></ComboBoxItem>
+            <ComboBoxItem Content="Drama"></ComboBoxItem>
+            <ComboBoxItem Content="Romance"></ComboBoxItem>
+            <ComboBoxItem Content="Thriller"></ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="lblRating" Grid.Row="3" Grid.Column="0" Content="Rating"/>
+        <TextBox x:Name="txtRating" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center"/>
+        <Button x:Name="btnSubmit" Content="Click For Imortality" Grid.Row="4" Grid.ColumnSpan="2" FontStyle="Oblique" HorizontalAlignment="Left" FontWeight="ExtraBold" Width="180" Height="30" FontSize="15" FontFamily="Bradley Hand ITC" Margin="95,0,0,0" VerticalAlignment="Top" Click="btnSubmit_Click" Cursor="Arrow"/>
+    </Grid>
+</Page>
