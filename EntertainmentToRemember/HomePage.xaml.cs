@@ -28,14 +28,14 @@ namespace EntertainmentToRemember
             //AddSearchOptions objAddSearch = new AddSearchOptions();
             //this.Content = objAddSearch;
 
-            this.NavigationService.Navigate(new AddSearchOptions());
+            this.NavigationService.Navigate(new AddSearchOptions("Movies"));
         }
 
         private void btnSongs_Click(object sender, RoutedEventArgs e)
         {
             //AddSearchOptions objAddSearch = new AddSearchOptions();
             //this.Content = objAddSearch;
-            this.NavigationService.Navigate(new AddSearchSongsOptions());
+            this.NavigationService.Navigate(new AddSearchOptions("Songs"));
 
         }
 
@@ -43,7 +43,7 @@ namespace EntertainmentToRemember
         {
             //AddSearchOptions objAddSearch = new AddSearchOptions();
             //this.Content = objAddSearch;
-            this.NavigationService.Navigate(new AddSearchShowsOptions());
+            this.NavigationService.Navigate(new AddSearchOptions("Shows"));
         }
     }
 }

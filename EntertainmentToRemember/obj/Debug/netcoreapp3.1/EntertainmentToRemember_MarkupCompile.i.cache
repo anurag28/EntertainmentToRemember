@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Anurag\Desktop\Conestoga\SENG8050\Capstone\EntertainmentToRemember\EntertainmentToRemember\App.xaml
-9-1971276169
+5-272702277
 
-14-70115106
+10-1734004885
 1921654412462
-AddMovies.xaml;AddSearchMoviesOptions.xaml;AddSearchShowsOptions.xaml;AddSearchSongsOptions.xaml;AddShows.xaml;AddSongs.xaml;HomePage.xaml;MainWindow.xaml;SearchMovies.xaml;
+AddContent.xaml;AddSearchOptions.xaml;HomePage.xaml;MainWindow.xaml;SearchMovies.xaml;
 
-True
+False
 

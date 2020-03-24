@@ -29,7 +29,7 @@ namespace EntertainmentToRemember
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             List<string> moviesList = new List<string>();
-            MessageBox.Show("------>" + txtCast.Text+"----------->"+ this.drpdownGenre.Text.ToString());
+           
             string moviesDetails = null;
             if(txtCast.Text=="" && this.drpdownGenre.Text.ToString() != "Choose your option")
             {

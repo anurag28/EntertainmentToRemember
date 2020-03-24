@@ -12,10 +12,6 @@ namespace EntertainmentToRemember
         {
             string fileName = genre+".txt";
             string details = name + ":" + cast + ":" + genre + ":" + rating;
-
-            //StreamWriter sw = new StreamWriter(rootFolder + fileName);
-            //sw.WriteLine(details);
-            //sw.Close();
             File.AppendAllLines(rootFolder + fileName, new[] { details});
         }
     }

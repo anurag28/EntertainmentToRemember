@@ -14,25 +14,29 @@ using System.Windows.Shapes;
 namespace EntertainmentToRemember
 {
     /// <summary>
-    /// Interaction logic for AddMovies.xaml
+    /// Interaction logic for AddContent.xaml
     /// </summary>
-    public partial class AddMovies : Page
+    public partial class AddContent : Page
     {
         FileWriter writeObj;
-       
-        public AddMovies()
+        string entertainmentType;
+        public AddContent(string entertainmentType)
         {
             InitializeComponent();
             writeObj = new FileWriter();
+            this.entertainmentType = entertainmentType;
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            string name = txtName.Text;
-            string cast = txtCast.Text;
-            string rating = txtRating.Text;
-            string genre = this.drpdownGenre.Text.ToString();
-            writeObj.WriteToMoviesFiles(name, cast, genre, rating);
+            if (entertainmentType == "Movies")
+            {
+                string name = txtName.Text;
+                string cast = txtCast.Text;
+                string rating = txtRating.Text;
+                string genre = this.drpdownGenre.Text.ToString();
+                writeObj.WriteToMoviesFiles(name, cast, genre, rating);
+            }
         }
     }
 }

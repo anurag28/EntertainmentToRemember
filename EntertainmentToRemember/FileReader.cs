@@ -23,59 +23,24 @@ namespace EntertainmentToRemember
 
             List<string> moviesList = new List<string>();
             string fileName;
-            try
-            {
+          
                 fileName = "Action.txt";
                 moviesList = GetListCastBasis(fileName, cast);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-            try
-            {
+            
                 fileName = "Romance.txt";
                 moviesList = GetListCastBasis(fileName, cast);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-            try
-            {
+            
+           
                 fileName = "Thriller.txt";
                 moviesList = GetListCastBasis(fileName, cast);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-            try
-            {
+           
                 fileName = "Drama.txt";
                 moviesList = GetListCastBasis(fileName, cast);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-            try
-            {
+                  
+           
                 fileName = "Comedy.txt";
-            }
-            catch (Exception)
-            {
+                moviesList = GetListCastBasis(fileName, cast);
 
-                throw;
-            }
             return moviesList;
         }
 

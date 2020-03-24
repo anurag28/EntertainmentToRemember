@@ -18,14 +18,16 @@ namespace EntertainmentToRemember
     /// </summary>
     public partial class AddSearchOptions : Page
     {
-        public AddSearchOptions()
+        string entertainmentType;
+        public AddSearchOptions(string entertainmentType)
         {
             InitializeComponent();
+            this.entertainmentType = entertainmentType;
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new AddMovies());   
+            this.NavigationService.Navigate(new AddContent(entertainmentType));
         }
 
         private void btnNavigateToHome_Click(object sender, RoutedEventArgs e)
@@ -35,7 +37,15 @@ namespace EntertainmentToRemember
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new SearchMovies());
+            if (entertainmentType == "Movies")
+            {
+                this.NavigationService.Navigate(new SearchMovies());
+            }
+        }
+
+        private void btnAddToWishlist_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

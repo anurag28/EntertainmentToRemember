@@ -7,10 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AddMovies.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="AddSearchMoviesOptions.xaml.cs">
+    <Compile Update="AddSearchOptions.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="AddSearchShowsOptions.xaml.cs">
@@ -33,10 +30,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AddMovies.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="AddSearchMoviesOptions.xaml">
+    <Page Update="AddSearchOptions.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddSearchShowsOptions.xaml">
